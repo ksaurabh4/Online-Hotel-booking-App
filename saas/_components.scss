@@ -27,10 +27,15 @@
     width: 90%;
     transition: all 0.2s;
     margin-right: -3.5rem;
+
     &:focus {
       outline: none;
       width: 100%;
       background-color: var(--color-grey-light-3);
+      @media only screen and (max-width: $bp-smallest) {
+        flex: 0 0 90%;
+        background-color: var(--color-grey-light-3);
+      }
     }
     &::-webkit-input-placeholder {
       font-weight: 100;

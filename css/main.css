@@ -117,6 +117,15 @@ body {
   background-color: var(--color-grey-light-3);
 }
 
+@media only screen and (max-width: 31.25em) {
+  .search__input:focus {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+    background-color: var(--color-grey-light-3);
+  }
+}
+
 .search__input::-webkit-input-placeholder {
   font-weight: 100;
   color: var(--color-grey-light-4);
